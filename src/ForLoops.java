@@ -1,22 +1,28 @@
 
-// For loop = execute a block of code a "limited" amount of time
+// for-each (enhance for loop) =  traversing technique to iterate throgh the elements in an array/collection
+//			   					  less steps, more readable	
+//			   					  but is less flexible	
 
+import java.util.ArrayList;
 
 public class ForLoops {
 	
 	public static void main (String[] args) {
 		
-		for(int i=10; i>=0; i--) { // index = i // i--  10-9-8-7-6-5-4-3-2-1-0 happy new year!
-			// i++   0-1-2-3-4-5-6-7-8-9 happy new year!
-			// 1-=2  = 8-6-4-2-0 happy new year!
-			System.out.println(i);
-			// i-- can be here and is the same
-		}
+		//String[] animals = {"cat","dog","rat","bird"};
+		//for(String i : animals) { // for every string index in animals array
+		//	System.out.println(); // cat dog rat bird}
 		
-		System.out.println("Happy new year!");
+		ArrayList<String> animals = new ArrayList<String>();		
+		animals.add("cat");
+		animals.add("dog");
+		animals.add("rat");
+		animals.add("bird");
+		for(String i : animals) { // for every string index in animals array
+			System.out.println(i); // cat dog rat bird}
 		
 		
 	}
-	
+	}	
 
 }

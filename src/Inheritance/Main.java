@@ -1,21 +1,20 @@
-// static = modifier. A single copy of a variable/method is created and shared.
-//			The class "owns" the static member
-
+//  Inheritance =    the process where one class acquire the attributes and methods of another
 package Inheritance;
 
 public class Main {
 	
 	public static void main (String[] args) {
 		
-		Friend friend1 = new Friend("Harpi");
-		Friend friend2 = new Friend("Kashu");
-		Friend friend3 = new Friend("Pawi");
+	
+		Car car = new Car();
+		//car.go(); //This vehicle is moving
 		
-		//System.out.println(Friend.numberOfFriends); //3  name of the class "Friend"+"Static member to access
+		Bicycle bike = new Bicycle();
+		//bike.stop(); //This vehicle is stopped
 		
-		
-		Friend.displayFriends(); //You have 3 friends
-		
+		System.out.println(car.speed); // 0.0
+		System.out.println(car.doors); // 5
+		System.out.println(bike.pedals); // 2
 		
 		}
 	}

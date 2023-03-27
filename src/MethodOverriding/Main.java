@@ -11,7 +11,7 @@ public class Main {
 		
 		
 		Dog dog = new Dog();
-		dog.speak();
+		dog.speak(); //the dog goes *Bark*
 		
 		}
 	}

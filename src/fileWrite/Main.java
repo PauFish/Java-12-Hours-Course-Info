@@ -11,7 +11,7 @@ public class Main {
 	try {
 		FileWriter writer = new FileWriter("poem.txt");
 		writer.write("En un lugar muy lejano de la galaxia \nStar wars");
-		writer.append("\n(A poem by me");
+		writer.append("\n*A poem by me*");
 		writer.close();
 		System.out.println("ya");
 	}catch (IOException e) {
